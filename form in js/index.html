@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Family Information</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <h1>Family Information</h1>
+    <form id="familyForm">
+        <label for="Name">name</label>
+        <input type="text">
+        <label for="status" style="display: block;">Marital Status:</label>
+        <select id="status" name="status" style="display: inline;">
+            <option value="single">Single</option>
+            <option value="married">Married</option>
+        </select>
+        <div id="childrenInput" style="display:none;">
+            <label for="children">Number of Children:</label>
+            <input type="number" id="children" name="children" min="0" value="0">
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
